@@ -2,10 +2,9 @@
 Tool to automatically decode/decrypt a message for CTFs
 
 # Installation
-https://github.com/oreosES/autodecoder.git
+git clone https://github.com/oreosES/autodecoder.git
 
 # Usage
-
 python3 audodecoder.py -h
 
                           (                                     
