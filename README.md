@@ -7,18 +7,6 @@ git clone https://github.com/oreosES/autodecoder.git
 # Usage
 python3 audodecoder.py -h
 
-                          (                                     
-   (             (        )\ )                  (               
-   )\       (    )\ )    (()/(     (            )\ )   (   (    
-((((_)(    ))\  (()/(  (  /(_))   ))\  (   (   (()/(  ))\  )(   
- )\ _ )\  /((_)  ((_)) )\(_))_   /((_) )\  )\   ((_))/((_)(()\  
- (_)_\(_)(_))(   _| | ((_)|   \ (_))  ((_)((_)  _| |(_))   ((_) 
-  / _ \  | || |/ _` |/ _ \| |) |/ -_)/ _|/ _ \/ _` |/ -_) | '_| 
- /_/ \_\  \_,_|\__,_|\___/|___/ \___|\__|\___/\__,_|\___| |_|   
-
-                    Author: oreos | Twitter: @oreos_ES
-
-
 usage: audodecoder.py [-h] [-l LEVELS] [-k KEY] [-p PATTERN] -m MESSAGE
 
 AutoDecoder.py
