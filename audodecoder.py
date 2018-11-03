@@ -1,8 +1,10 @@
 from utils.decoder import Decoder
 from itertools import product
+from colorama import Fore
 import argparse
 
 def banner():
+    print(Fore.RED)
     print("\n\
                           (                                     \n\
    (             (        )\ )                  (               \n\
@@ -12,7 +14,7 @@ def banner():
  (_)_\(_)(_))(   _| | ((_)|   \ (_))  ((_)((_)  _| |(_))   ((_) \n\
   / _ \  | || |/ _` |/ _ \| |) |/ -_)/ _|/ _ \/ _` |/ -_) | '_| \n\
  /_/ \_\  \_,_|\__,_|\___/|___/ \___|\__|\___/\__,_|\___| |_|   \n\n\
-        Author: oreos | Twitter: @oreos_ES\n\n")
+                    Author: oreos | Twitter: @oreos_ES\n\n")
 
 def decodefunc(message, key, levels, pattern):
     decoder = Decoder()
@@ -36,19 +38,14 @@ def decodefunc(message, key, levels, pattern):
             if translated is None:
                 break
         if translated is not None:
-            if pattern is None:
-                print(flow)
-                print("Output:"+translated)
-            else:
-                if pattern in translated:
-                    print(flow)
-                    print("Output:"+translated)
+            if pattern is None or (pattern and pattern in translated):
+                    print(Fore.WHITE+flow+" "+Fore.BLUE+translated)
 
 def main():
     banner()
 
     parser = argparse.ArgumentParser(description='AutoDecoder.py')
-    parser.add_argument("-l", "--levels", type=int, help='Number of decoding levels [1-10], default = 2', default=2)
+    parser.add_argument("-l", "--levels", type=int, help='Number of decoding levels [1-6], default = 2', default=2)
     parser.add_argument("-k", "--key", type=str, help='Key used to decode')
     parser.add_argument("-p", "--pattern", type=str, help='Search pattern in decoded string')
     requiredNamed = parser.add_argument_group('required named arguments')
