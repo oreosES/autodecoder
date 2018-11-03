@@ -4,7 +4,7 @@ from colorama import Fore
 import argparse
 
 def banner():
-    print(Fore.RED)
+    print(Fore.WHITE)
     print("\n\
                           (                                     \n\
    (             (        )\ )                  (               \n\
