@@ -20,9 +20,9 @@ Tool to automatically decode/decipher a message. The following decoders/decipher
 git clone https://github.com/oreosES/autodecoder.git
 
 # Dependencies
-Python3 argparse, colorama and pyperclip libraries. To install them using pip3:
+Python3 argparse, colorama, pycipher and pyperclip libraries. To install them using pip3:
 
-pip3 install argparse colorama pyperclip
+pip3 install argparse colorama pycipher pyperclip
 
 # Usage
 python3 audodecoder.py -h
