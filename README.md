@@ -1,7 +1,6 @@
 # AutoDecoder.py
-Tool to automatically decode/decrypt a message for CTFs
+Tool to automatically decode/decipher a message. The following decoders/deciphers have been implemented:
 
-The following decoders/deciphers are included:
 - Base16
 - Base32
 - Base64
