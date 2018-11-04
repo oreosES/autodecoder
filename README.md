@@ -5,7 +5,10 @@ Tool to automatically decode/decipher a message. The following decoders/decipher
 - Base32
 - Base64
 - Base85
+- Autokey
+- Atbash
 - Baconian
+- Beaufort
 - Caesar
 - MorseCode
 - ROT13
