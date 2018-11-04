@@ -21,6 +21,7 @@ class Vigenere:
                         keyIndex = 0
                 else:
                     translated.append(symbol)
+            translated = translated if len(translated) > 0 else None
             return ''.join(translated).rstrip('\n')
         except:
             return None

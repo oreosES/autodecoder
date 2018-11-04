@@ -12,10 +12,11 @@ class MorseCode():
      '----.': '9', '.-..-.': '"', '-.--.': '(', '---..': '8', '...--': '3'
     }
     def decode(self, message):
-        translated = []
-        for item in message.split(' '):
-            translated.append(self.dictionary.get(item))
         try:
+            translated = []
+            for item in message.split(' '):
+                translated.append(self.dictionary.get(item))
+            translated = translated if len(translated) > 0 else None
             return ''.join(translated).rstrip('\n')
         except:
             return None

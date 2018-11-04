@@ -1,7 +1,15 @@
-from utils.decoder import Decoder
-from itertools import product
-from colorama import Fore
-import argparse
+try:
+    from colorama import Fore
+    import argparse
+    import pycipher
+    import pyperclip
+    from utils.decoder import Decoder
+    from itertools import product
+except:
+    print("\
+AutoDecoder.py - Error: Install required libraries\n\
+    pip3 install argparse colorama pycipher pyperclip")
+    exit()
 
 def banner():
     print(Fore.WHITE)
@@ -30,7 +38,10 @@ def decodefunc(args):
         "base32",
         "base64",
         "base85",
+        "autokey",
+        "atbash",
         "baconian",
+        "beaufort",
         "caesar",
         "morse",
         "rot13",

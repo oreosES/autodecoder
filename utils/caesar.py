@@ -19,6 +19,7 @@ class Caesar:
                     translated += self.getShiftCh(ch, shift)
                 else:
                     translated += ch
+            translated = translated if len(translated) > 0 else None
             return translated.rstrip('\n')
         except:
             return None
